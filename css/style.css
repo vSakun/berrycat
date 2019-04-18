@@ -213,7 +213,7 @@ header {
   -moz-background-clip: inherit;
   background-clip: inherit;
   background-color: transparent;
-  transition: color .3s;
+  transition: color .3s, text-shadow .7s;
 }
 
 #top_mnu {
