@@ -1,6 +1,6 @@
 html {
   /* background-color: #FFE8D7; */
-  background: url(../image/coffee.png) no-repeat center top -250px, linear-gradient(to top, #A3785D, #FFE8D7);
+  background: url(../image/coffee.png) no-repeat top -9.4% left 5.5%, linear-gradient(to top, #A3785D, #FFE8D7);
 }
 
 img {
@@ -169,13 +169,13 @@ header {
   align-items: stretch;
 }
 
-.logo_img {
+/* .logo_img {
   position: relative;
   background-size: contain;
   width: 50%;
   background-repeat: no-repeat;
   background-image: url(../image/cat-mini.png);
-}
+} */
 
 .menu_bar {
   width: 50%;
