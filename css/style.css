@@ -532,8 +532,8 @@ footer {
   background-size: cover;
 }
  .icon_contact a:nth-child(1):hover::after {
-  /* background: url(../image/soc_hover_color.png) left no-repeat; */
-  background-size: cover;
+  /* background: url(../image/soc_hover_color.png) left no-repeat;
+  background-size: cover; */
   box-shadow: 1px 1px 2px rgba(99, 50, 117, .9);
   transition: box-shadow .3s;
 }
@@ -542,8 +542,8 @@ footer {
   background-size: cover;
 }
  .icon_contact a:nth-child(2):hover {
-  /* background: url(../image/soc_hover_color.png) center no-repeat; */
-  background-size: cover;
+  /* background: url(../image/soc_hover_color.png) center no-repeat;
+  background-size: cover; */
   box-shadow: 1px 1px 2px rgba(59, 89, 152, 1);
   transition: box-shadow .3s;
 }
@@ -552,8 +552,8 @@ footer {
   background-size: cover;
 }
  .icon_contact a:nth-child(3):hover {
-  /* background: url(../image/soc_hover_color.png) right no-repeat; */
-  background-size: cover;
+  /* background: url(../image/soc_hover_color.png) right no-repeat;
+  background-size: cover;*/
   box-shadow: 1px 1px 2px rgba(187, 0, 0, .9);
   transition: box-shadow .3s;
 }
