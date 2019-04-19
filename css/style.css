@@ -499,14 +499,29 @@ footer {
 }
 
 .icon_contact a {
+  position: relative;
   font-family: Steamy;
   /* text-shadow: 1px 1px 1px rgba(0,0,0,.5); */
-
+  border-radius: 50%;
+  /* box-shadow: 1px 1px 2px #000000; */
   width: 50px;
   height: 50px;
   /* transition: color .3s, text-shadow .3s; */
 }
+.icon_contact a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(163, 120, 93, .6);
+  transition: box-shadow .3s, background-color .3s;
+}
 
+.icon_contact a:hover::after {
+  background-color: transparent;
+  transition: background-color .3s;
+}
 /* .icon_contact a:hover, .contact_mini a:hover {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, .5);
   transition: color .3s, text-shadow .3s;
@@ -516,25 +531,31 @@ footer {
   background: url(../image/soc.png) left no-repeat;
   background-size: cover;
 }
-.icon_contact a:nth-child(1):hover {
-  background: url(../image/soc_hover.png) left no-repeat;
+ .icon_contact a:nth-child(1):hover::after {
+  /* background: url(../image/soc_hover_color.png) left no-repeat; */
   background-size: cover;
+  box-shadow: 1px 1px 2px rgba(99, 50, 117, .9);
+  transition: box-shadow .3s;
 }
 .icon_contact a:nth-child(2) {
   background: url(../image/soc.png) center no-repeat;
   background-size: cover;
 }
-.icon_contact a:nth-child(2):hover {
-  background: url(../image/soc_hover.png) center no-repeat;
+ .icon_contact a:nth-child(2):hover {
+  /* background: url(../image/soc_hover_color.png) center no-repeat; */
   background-size: cover;
+  box-shadow: 1px 1px 2px rgba(59, 89, 152, 1);
+  transition: box-shadow .3s;
 }
 .icon_contact a:nth-child(3) {
   background: url(../image/soc.png) right no-repeat;
   background-size: cover;
 }
-.icon_contact a:nth-child(3):hover {
-  background: url(../image/soc_hover.png) right no-repeat;
+ .icon_contact a:nth-child(3):hover {
+  /* background: url(../image/soc_hover_color.png) right no-repeat; */
   background-size: cover;
+  box-shadow: 1px 1px 2px rgba(187, 0, 0, .9);
+  transition: box-shadow .3s;
 }
 /* .contact_mini a{
   color: #333333;
