@@ -170,13 +170,13 @@ header {
   align-items: stretch;
 }
 
-/* .logo_img {
+.logo_img {
   position: relative;
   background-size: contain;
   width: 50%;
   background-repeat: no-repeat;
-  background-image: url(../image/cat-mini.png);
-} */
+  background-image: url(../image/logo.png);
+}
 
 .menu_bar {
   width: 50%;
