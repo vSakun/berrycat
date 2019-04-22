@@ -377,25 +377,30 @@ header {
   align-items: center;
   overflow: hidden;
 }
+
 /* отображение скрытого блока */
 .foto_bloc .vis {
-  width: 100%;
-  height: 100%;
+  width: 0;
+  height: 0;
   opacity: 0;
+  transition: opacity .5s;
 }
-.hid{
+/* отображение скрытого блока */
+.hid {
   display: none;
 }
 
-.info_item_slide{
+
+.info_item_slide {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  width: 0;
-  height: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity .5s;
 }
 
 .info_item_slide img {
@@ -411,7 +416,6 @@ header {
   z-index: 1;
   transition: opacity 1s;
 }
-
 
 .slide_manual {
   position: absolute;
@@ -510,7 +514,7 @@ footer {
   align-items: flex-end;
 }
 
-.icon_contact{
+.icon_contact {
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -529,6 +533,7 @@ footer {
   height: 50px;
   /* transition: color .3s, text-shadow .3s; */
 }
+
 .icon_contact a::after {
   content: "";
   position: absolute;
@@ -543,41 +548,47 @@ footer {
   background-color: transparent;
   transition: background-color .3s;
 }
+
 /* .icon_contact a:hover, .contact_mini a:hover {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, .5);
   transition: color .3s, text-shadow .3s;
 } */
-
 .icon_contact a:nth-child(1) {
   background: url(../image/soc.png) left no-repeat;
   background-size: cover;
 }
- .icon_contact a:nth-child(1):hover::after {
+
+.icon_contact a:nth-child(1):hover::after {
   /* background: url(../image/soc_hover_color.png) left no-repeat;
   background-size: cover; */
   box-shadow: 1px 1px 2px rgba(99, 50, 117, .9);
   transition: box-shadow .3s;
 }
+
 .icon_contact a:nth-child(2) {
   background: url(../image/soc.png) center no-repeat;
   background-size: cover;
 }
- .icon_contact a:nth-child(2):hover {
+
+.icon_contact a:nth-child(2):hover {
   /* background: url(../image/soc_hover_color.png) center no-repeat;
   background-size: cover; */
   box-shadow: 1px 1px 2px rgba(59, 89, 152, 1);
   transition: box-shadow .3s;
 }
+
 .icon_contact a:nth-child(3) {
   background: url(../image/soc.png) right no-repeat;
   background-size: cover;
 }
- .icon_contact a:nth-child(3):hover {
+
+.icon_contact a:nth-child(3):hover {
   /* background: url(../image/soc_hover_color.png) right no-repeat;
   background-size: cover;*/
   box-shadow: 1px 1px 2px rgba(187, 0, 0, .9);
   transition: box-shadow .3s;
 }
+
 /* .contact_mini a{
   color: #333333;
   text-transform: none;

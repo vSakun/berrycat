@@ -1,11 +1,11 @@
 /* Slider */
 $(document).ready(function(){
-	$(".info_item_slide:gt(0)").addClass("vis").addClass("hid");
+	$(".foto_bloc .info_item_slide:gt(0)").addClass("vis").addClass("hid");
 });
 function slider(){
 	$(".next").on('click', function(){
 		var slide = $(".foto_bloc [class=info_item_slide]");
-		if(slide.next().hasClass("his")){
+		if(slide.next().hasClass("hid")){
 			slide.addClass("vis");
 			setTimeout(function () {
 				slide.addClass("hid");
@@ -18,7 +18,7 @@ function slider(){
 	});
 	$(".prev").on('click', function(){
 		var slide = $(".foto_bloc [class=info_item_slide]");
-		if(slide.prev().hasClass("his")){
+		if(slide.prev().hasClass("hid")){
 			slide.addClass("vis");
 			setTimeout(function () {
 				slide.addClass("hid");
