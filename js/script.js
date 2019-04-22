@@ -1,11 +1,11 @@
 /* Slider */
 $(document).ready(function(){
-	$("#project .container .row:gt(0)").addClass("vis").addClass("hid");
+	$(".info_item_slide:gt(0)").addClass("vis").addClass("hid");
 });
 function slider(){
-	$(".control .nextBlok").on('click', function(){
-		var slide = $("#project [class=row]");
-		if(slide.next().hasClass("hid")){
+	$(".next").on('click', function(){
+		var slide = $(".foto_bloc [class=info_item_slide]");
+		if(slide.next().hasClass("his")){
 			slide.addClass("vis");
 			setTimeout(function () {
 				slide.addClass("hid");
@@ -16,9 +16,9 @@ function slider(){
 			}, 550);
 		}
 	});
-	$(".control .prevBlok").on('click', function(){
-		var slide = $("#project [class=row]");
-		if(slide.prev().hasClass("hid")){
+	$(".prev").on('click', function(){
+		var slide = $(".foto_bloc [class=info_item_slide]");
+		if(slide.prev().hasClass("his")){
 			slide.addClass("vis");
 			setTimeout(function () {
 				slide.addClass("hid");
@@ -87,11 +87,6 @@ function sentMessWin(){
 	});
 }
 sentMessWin();
-/* паралакс наклонного блока */
-$(window).scroll(function(){
-	var st = $(this).scrollTop();
-	$("#rotatBlok img").css({"transform":"translate(0%,-"+ st/20 +"%)"})
-});
 /* Buttom up*/
 /*Кнопка вверх с плавным появлением и плавным скролом*/
 /*topBottom - id элемента, на который надо нажать что бы вернуться на верх*/
@@ -145,11 +140,3 @@ $(window).load(function(){
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(250).fadeOut("slow");
 });
-/*Анимация блоков на странице*/
-	$(".animation_2").animated("slideInDown", "slideOutUp");
-	$(".animation_4").animated("pulse", "pulse");
-	$(".animation_3").animated("flipInX", "flipOutX");
-	$(".animation_5").animated("fadeInDown", "fadeOutUp");
-	$(".animation_6").animated("fadeInRight", "fadeOutRight");
-	$(".animation_8").animated("fadeInLeft", "fadeOutLeft");
-	$(".animation_7").animated("bounceIn","bounceOut");
