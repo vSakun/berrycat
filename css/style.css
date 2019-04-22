@@ -380,14 +380,14 @@ header {
 
 /* отображение скрытого блока */
 .foto_bloc .vis {
-  width: 0;
-  height: 0;
   opacity: 0;
   transition: opacity .5s;
 }
 /* отображение скрытого блока */
-.hid {
-  display: none;
+.foto_bloc .hid {
+  width: 0;
+  height: 0;
+  transition: opacity .5s;
 }
 
 
@@ -400,6 +400,7 @@ header {
   overflow: hidden;
   width: 100%;
   height: 100%;
+  opacity: 1;
   transition: opacity .5s;
 }
 
