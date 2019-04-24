@@ -21,7 +21,7 @@ img {
   padding: 0 20px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 150px 40px auto 40px auto 40px auto 40px auto 300px;
+  grid-template-rows: minmax(50px, 150px) minmax(20px, 40px) minmax(450px, 100%) minmax(20px, 50px) minmax(450px, 100%) minmax(20px, 50px) minmax(450px, 100%) minmax(20px, 50px) minmax(450px, 100%) 300px;
   grid-gap: .5em;
 }
 
@@ -102,7 +102,7 @@ h2::before {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
 }
 
 h3 {
@@ -615,3 +615,5 @@ footer {
 .themes_article_mini .ctgr_mnu a {
   text-shadow: none;
 }
+
+/* page article */
