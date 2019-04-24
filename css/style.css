@@ -23,7 +23,7 @@ img {
   padding: 0 20px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(50px, 150px) minmax(20px, 40px) minmax(450px, 100%) minmax(20px, 50px) minmax(450px, 100%) minmax(20px, 50px) minmax(450px, 100%) minmax(20px, 50px) minmax(450px, 100%) 300px;
+  grid-template-rows: minmax(50px, 150px) minmax(20px, 40px) minmax(450px, auto) minmax(20px, 50px) minmax(450px, auto) minmax(20px, 50px) minmax(450px, auto) minmax(20px, 50px) minmax(450px, auto) 300px;
   grid-gap: .5em;
 }
 
