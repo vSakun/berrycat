@@ -1,7 +1,10 @@
 html {
   /* background-color: #FFE8D7; */
-  background: url(../image/coffee.png) no-repeat top -9.4% left 5.5%, linear-gradient(to top, #A3785D, #FFE8D7);
+  /* background: url(../image/coffee.png) no-repeat top -9.4% left 5.5%, linear-gradient(to top, #A3785D, #FFE8D7); */
   box-shadow: inset 0 0 200px #A3785D;
+  /* background: url(../image/coffee.png) no-repeat top -9.4% left 5.5%, url(../image/431.jpg); */
+  background: url(../image/top.jpg) no-repeat top, url(../image/bottom.jpg) no-repeat bottom, url(../image/midle.jpg) repeat-Y;
+  background-size: contain, contain, contain;
 }
 
 img {
