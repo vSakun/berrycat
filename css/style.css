@@ -58,6 +58,7 @@ span {
 }
 
 h1 {
+  position: relative;
   font-size: 5rem;
   color: transparent;
   //text-shadow: 1px 1px 2px black;
@@ -70,6 +71,15 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+h1::before{
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+  height: 10px;
+  background: -webkit-radial-gradient(center, ellipse, rgba(99, 50, 117, .4) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(99, 50, 117, .4) 0%, rgba(0, 0, 0, 0) 80%);
 }
 
 h2 {
@@ -176,15 +186,17 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
+  z-index: -1;
 }
 
 .logo_img {
   position: relative;
-  background-size: contain;
+  background-size: cover;
   background-position:center;
   width: 50%;
   background-repeat: no-repeat;
-  background-image: url(../image/cat_logo.png);
+  background-image: url(../image/cat_room.png);
+  z-index: 5;
 }
 
 .menu_bar {
