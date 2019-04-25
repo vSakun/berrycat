@@ -78,8 +78,8 @@ h1::before{
   bottom: 10px;
   width: 90%;
   height: 10px;
-  background: -webkit-radial-gradient(center, ellipse, rgba(99, 50, 117, .4) 0%, rgba(0, 0, 0, 0) 80%);
-  background: radial-gradient(ellipse at center, rgba(99, 50, 117, .4) 0%, rgba(0, 0, 0, 0) 80%);
+  background: -webkit-radial-gradient(center, ellipse, rgba(37, 0, 54, .4) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(37, 0, 54, .4) 0%, rgba(0, 0, 0, 0) 80%);
 }
 
 h2 {
